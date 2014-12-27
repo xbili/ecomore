@@ -1,0 +1,258 @@
+@font-face {
+	font-family: LemonMilk;
+	src: url(../fonts/LemonMilk.otf);
+}
+
+/* corrects rounded navbar */
+.navbar-wrapper .navbar {
+	border-radius: 0px;
+}
+
+body {
+	padding-bottom: 0;
+	line-height: 1.5;
+	font-size: 16px;
+	position: relative;
+}
+
+	body h2 {
+		font-size: 35px;
+	}
+
+.carousel-caption {
+  padding: 75px 0px;
+  color: white;
+}
+
+.carousel-caption p {
+  font-size: 55px;
+  padding-bottom: 150px;
+}
+
+.carousel-fonts {
+	font-family: "Helvetica Neue", serif;
+}
+
+.btn {
+	background-color: #287D0B;
+	border-color: #287D0B;
+	margin-bottom: 30px;
+}
+
+	.btn:hover {
+		background-color: #1D6107;
+		border-color: #1D6107;
+	}
+
+#welcome {
+	display: none;
+}
+
+#title {
+	color: #1D6107;
+	font-size: 50px;
+	padding-bottom: 200px;
+	text-shadow: 2px;
+}
+
+#aboutus {
+	font-size: 50px;
+	text-align: justify;
+}
+	#aboutus h1 {
+		margin-top: 50px;
+		font-size: 60px;
+	}
+
+#navbar {
+	float: right;
+	font-family: LemonMilk;
+}
+
+#products {
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.plastic {
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px 10px;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+}
+
+.plastic-info {
+	background: rgba(0, 0, 0, 0.75);
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	opacity: 0;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+.plastic:hover .plastic-info {
+	opacity: 1;
+}
+
+#plastics {
+	padding-bottom: 400px;
+}
+
+	#plastics .row {
+		height: 300px;
+	}
+
+	#plastics span {
+		font-family: LemonMilk;
+		color: white;
+		font-size: 30px;
+	}
+
+	#p1 {
+		background: url(../img/plastics/ldpe.JPG);
+	}
+
+	#p2 {
+		background: url(../img/plastics/hdpe.JPG);
+	}
+
+	#p3 {
+		background: url(../img/plastics/pet.JPG);
+	}
+
+	#p4 {
+		background: url(../img/plastics/pp.JPG);
+	}
+
+	#p5 {
+		background: url(../img/plastics/psabs.JPG);
+	}
+
+	#p6 {
+		background: url(../img/plastics/others.JPG);
+	}
+
+	#info {
+		font-family: LemonMilk;
+		border: 1px solid #8D8D8D;
+		display: none;
+		border-radius: 10px;
+		height: 300px;
+		margin-bottom: 100px;
+	}
+
+		#info #name {
+			width: 900px;
+			font-size: 20px;
+		}
+
+	#back {
+		margin-top: 5px;
+		margin-left: 5px;
+		border: none;
+		float: left;
+		background-color: white; 
+	}
+
+	#back:hover {
+		border: none;
+		background-color: #8D8D8D;
+	}
+
+.company_name {
+	font-size: 32px;
+	font-family: LemonMilk;
+}
+
+.last-divider {
+	margin-bottom: 10px;
+}
+
+.contact {
+	background-image: url('../img/contact.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+  	color: #fff;
+	text-align: center;
+  	padding: 50px 0px;
+}
+
+	.contact h1 {
+		text-align: center;
+		font-size: 50px;
+	}
+
+	.contact ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.contact li {
+		font-size: 21px;
+	}
+
+	#email {
+		color: white;
+	}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.plastic-info {
+		opacity: 0.8;
+	}
+
+	#plastics {
+		margin-bottom: 10px;
+		padding-left: 27%;
+		padding-bottom: 10px;
+		height: 100%;
+	}
+
+	#info {
+		height: 100%;
+		font-size: 12px;
+	}
+
+		#info #name {
+			font-size: 16px;
+		}
+
+	.contact h1 {
+		font-size: 20px;
+	}
+
+	.contact li {
+		font-size: 12px;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.plastic-info {
+		opacity: 0.8;
+	}
+
+	#plastics {
+		margin-bottom: 10px;
+		padding-left: 40%;
+		padding-bottom: 10px;
+		height: 100%;
+	}
+
+	#info {
+		height: 100%;
+		font-size: 12px;
+	}
+
+		#info #name {
+			font-size: 16px;
+		}
+}
