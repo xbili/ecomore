@@ -140,8 +140,7 @@ body {
 	}
 
 	#info {
-		font-family: LemonMilk;
-		border: 1px solid #8D8D8D;
+		font-family: "Helvetica Neue", serif;
 		display: none;
 		border-radius: 10px;
 		height: 300px;
